@@ -61,8 +61,9 @@ global.socialm = "o" //ur github or insta name
 global.location = "Egypt" //ur location
 
 //bot bomdy 
-global.owner = ['201507955625']
+global.owner = ['201121968769']
 global.ownertag = '201121968769' //ur tag number
+
 global.botname = 'ᴹᴿ᭄ Bot Whatsapp ×፝֟͜×' //ur bot name
 global.linkz = "https://youtube.com/channel/UCaWoQPfLiIY4dDp3WeWm7oA" //your theme url which will be displayed on whatsapp
 global.websitex = "https://youtube.com/channel/UCaWoQPfLiIY4dDp3WeWm7oA" //ur website to be displayed
@@ -101,24 +102,24 @@ global.ntilink = []
 
 //omther
 global.sessionName = 'session'
-global.antitags = true
+global.antitags = false
 global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
-    success: 'Done ✓',
-    admin: 'لازم تكون ادمن الاول 💗',
-    botAdmin: 'لازم بوت يكون ادمن الاول 🤓',
-    owner: 'ميزه دي ل مالك البوت فقط 💗',
-    group: 'ميزه دي في رومات فقط ❤',
-    private: 'Features Used Only For Private Chat!',
-    bot: 'This Feature Is Only For Bot',
-    wait: 'استني شويه🌚',
-    linkm: 'فين لينك🤓',
-    error: 'ايرور🙂',
-    endLimit: 'Your Daily Limit Has Expired, The Limit Will Be Reset Every 12 Hours',
-    ban: 'You have been banned by the owner, if you want to be unbanned, chat owner.',
-    nsfw: 'The nsfw feature has not been activated, please contact the admin to activate',
-    banChat: 'The bot was banned in this group, please contact the owner to unban'
+    success: 'ضن✓',
+    admin: 'لازم تكون ادمن الاول ',
+    botAdmin: 'لازم اكون ادمن  الاول ',
+    owner: 'ميزه دي ل مالك البوت فقط ',
+    group: 'فقط في رومات ',
+    private: 'برايفت بس!',
+    bot: 'ميزه دي ل بوت فقط',
+    wait: 'استني ....',
+    linkm: 'فين لينك؟',
+    error: 'ايرور!!!!',
+    endLimit: 'تعالا بكره !',
+    ban: 'لا استطيع ارسال اي شئ لان مالك قام بحظر هاذا روم !',
+    nsfw: 'ميزه مقفوله خلي الادمن يشغلها!',
+    banChat: ''
 }
     global.limitawal = {
     premium: "Infinity",

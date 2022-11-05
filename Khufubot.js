@@ -630,7 +630,7 @@ khufuBotInc.sendMessage(from, {text:`\`\`\`「 Wa.me Link Detected 」\`\`\`\n\n
 //anti bad words by khufu
 if (antiToxic)
 if (bad.includes(messagesD)) {
-tos = ['يملحد','يكافر','استغفر ربك','هتروحو من ربنا فين ي معرصين']
+tos = ['يملحد','يكافر','استغفر ربك','هتروحو من ربنا فين ي معرصين','كافرررررررررررر']
 sin =  tos[Math.floor(Math.random() * (tos.length))]
 reply(sin)
 if (m.text) {
@@ -2254,7 +2254,7 @@ if (isBanChat) return reply(mess.banChat)
                 reply(mess.success)
                 }
                 break
-           case 'setgrouppp': case 'صورهالروم': case 'setgcpp': {
+           case 'setgrouppp': case 'setgruppp': case 'setgcpp': {
            	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
@@ -2267,13 +2267,13 @@ if (isBanChat) return reply(mess.banChat)
                 reply(mess.success)
                 }
                 break
-            case 'tagall': case 'تاج': {
+            case 'tagall': case 'منشن': {
             	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
                 if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-let teks = `╚»˙·٠•●♥ تاج لكل اعضاء روم ♥●•٠·˙«╝ 
+let teks = `╚»˙·٠•●♥ منشن لكل اعضاء روم ♥●•٠·˙«╝ 
  
  ➲ *Message : ${q ? q : 'no message'}*\n\n`
                 for (let mem of participants) {
@@ -2282,7 +2282,7 @@ let teks = `╚»˙·٠•●♥ تاج لكل اعضاء روم ♥●•٠·˙
                 khufuBotInc.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
                 break
-                case 'hidetag': case 'خفي': {
+                case 'hidetag': case 'ء': {
                 	if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
             if (!m.isGroup) return replay(`${mess.group}`)
@@ -2811,27 +2811,27 @@ if (!m.isGroup) return replay(mess.group)
 if (!isBotAdmins) return replay(mess.botAdmin)
 if (!isAdmins && !isCreator) return replay(mess.admin)
 if (args[0] === "on") {
-if (AntiLinkTwitter) return replay('Already activated')
+if (AntiLinkTwitter) return replay('متفعله اصلا')
 ntilinkall.push(from)
-replay('تم تفعيل ميزه لينكات❤')
+replay('اتفعلت!')
 var groupe = await khufuBotInc.groupMetadata(from)
 var members = groupe['participants']
 var mems = []
 members.map(async adm => {
 mems.push(adm.id.replace('c.us', 's.whatsapp.net'))
 })
-khufuBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️تحذير⚠️ 」\`\`\`\n\nاي حد هيرمي لينك غير الادمن هياخد بان🤓❤`, contextInfo: { mentionedJid : mems }}, {quoted:m})
+khufuBotInc.sendMessage(from, {text: `\`\`\`「 ⚠️تحذير⚠️ 」\`\`\`\n\nاي حد هيرمي لينك غير الادمن هياخد بان`, contextInfo: { mentionedJid : mems }}, {quoted:m})
 } else if (args[0] === "off") {
-if (!AntiLinkAll) return replay('Already deactivated')
+if (!AntiLinkAll) return replay('مقفوله اصلا')
 let off = ntilinkall.indexOf(from)
 ntilinkall.splice(off, 1)
-replay('تم قفل ميزه الينكات❤')
+replay('اتقفلت')
 } else {
   let buttonsntilink = [
   { buttonId: `${command} on`, buttonText: { displayText: 'فعل' }, type: 1 },
   { buttonId: `${command} off`, buttonText: { displayText: 'اقفل' }, type: 1 }
   ]
-  await khufuBotInc.sendButtonText(m.chat, buttonsntilink, `ميزه الينكات ❤`, `${global.botname}`, m)
+  await khufuBotInc.sendButtonText(m.chat, buttonsntilink, `ميزه الينكات `, `${global.botname}`, m)
   }
   }
   break
@@ -3118,7 +3118,7 @@ id: 'ping'
 }
 }, {
 quickReplyButton: {
-displayText: 'اوامر😜',
+displayText: 'اوامر',
 id: 'menu'
 }  
 }, {
@@ -3409,7 +3409,7 @@ let media = await quoted.download()
 let encmedia = await khufuBotInc.sendVideoAsSticker(m.chat, media, m, { packname: global.packname, author: global.author })
 await fs.unlinkSync(encmedia)
 } else {
-reply(`اعمل ريب علي صوره او فديو وكتب امر`)
+reply(`اعمل ريب علي صوره / فديو و اكتب s`)
 }
 }
 break
