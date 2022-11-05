@@ -1,8 +1,7 @@
 
 
 <h1 align="center">ꪶ𝐵𝑂Ť 𝐾𝐻𝑈𝐹𝑈 𝑉1ꫂ<br></h1>
-<p align="center">
-<img src="https://media.tenor.com/images/e15cb1453a09e25bab41116d930329bf/tenor.gif" alt="animated" width="540" height="280" />
+<p align="center"> />
 </p>
 
 ## ` BUILDPACKS`
