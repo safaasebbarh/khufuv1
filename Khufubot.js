@@ -2186,14 +2186,14 @@ if (isBanChat) return reply(mess.banChat)
 		await khufuBotInc.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
-	case 'promote': case 'مشرف': {
+	case 'promotee': case 'مشرف': {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
-		await khufuBotInc.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+		await khufuBotInc.groupParticipantsUpdate(m.chat, [users], 'promotee').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
 	case 'demote': case 'نزلو': {
@@ -2487,13 +2487,13 @@ if (isBanChat) return reply(mess.banChat)
                 if (args[0] === 'close'){
                     await khufuBotInc.groupSettingUpdate(m.chat, 'announcement').then((res) => reply(`Successful Closing The Group`)).catch((err) => reply(jsonformat(err)))
                 } else if (args[0] === 'open'){
-                    await khufuBotInc.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`Successful Opening The Group`)).catch((err) => reply(jsonformat(err)))
+                    await khufuBotInc.groupSettingUpdate(m.chat, 'not_announcement').then((res) => reply(`ضن!`)).catch((err) => reply(jsonformat(err)))
                 } else {
                 let buttons = [
                         { buttonId: 'group open', buttonText: { displayText: 'افتح' }, type: 1 },
                         { buttonId: 'group close', buttonText: { displayText: 'اقفل' }, type: 1 }
                     ]
-                    await khufuBotInc.sendButtonText(m.chat, buttons, `Group Mode`, khufuBotInc.user.name, m)
+                    await khufuBotInc.sendButtonText(m.chat, buttons, `اعدادات جروب`, khufuBotInc.user.name, m)
 
              }
             }
@@ -8449,6 +8449,16 @@ View List Of Messages With ${prefix}listmsg`)
                 reply('Successful Change To Self Usage')
             }
             break
+            	case 'promote': case  'رولل' : {
+		if (isBan) return reply(mess.ban)	 			
+if (isBanChat) return reply(mess.banChat)
+		if (!m.isGroup) return replay(`${mess.group}`)
+                if (!isBotAdmins) return replay(`${mess.botAdmin}`)
+                if (!isCreator) return replay(`${mess.owner}`)
+		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g,   )+ @s.whatsapp.net 
+		await khufuBotInc.groupParticipantsUpdate(m.chat, [users], 'promote').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
+	}
+	break
 case 'setstatuts':
 case 'setbio':
    if (isBan) return reply(mess.ban)	 			
