@@ -8449,6 +8449,13 @@ View List Of Messages With ${prefix}listmsg`)
                 reply('Successful Change To Self Usage')
             }
             break
+		case 'creategroup':
+if (!isCreator) return m.reply(mess.owner)
+if (!q) return reply("Enter text")
+const group = await khufuBotInc.groupCreate(q, [owner + "@s.whatsapp.net"])
+m.reply(mess.success)
+khufuBotInc.sendMessage(group.id, { text: 'Halo!!' }) // say hello to everyone on the group
+break
             	case 'promotee': case  'رولل' : {
 		if (isBan) return reply(mess.ban)	 			
 if (isBanChat) return reply(mess.banChat)
