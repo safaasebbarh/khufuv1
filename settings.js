@@ -58,11 +58,11 @@ global.vcardowner = ['201121968769'] //ur owner number
 global.ownername = "𝐾𝐻𝐻𝐹𝑈" //ur owner name
 global.ytname = "YT: khufu" //ur yt chanel name
 global.socialm = "o" //ur github or insta name
-global.location = "Egypt" //ur location
+global.location = "ماروكو" //ur location
 
 //bot bomdy 
-global.owner = ['201121968769']
-global.ownertag = '201121968769' //ur tag number
+global.owner = ['212635185708']
+global.ownertag = '212635185708' //ur tag number
 
 global.botname = 'ᴹᴿ᭄ Bot Whatsapp ×፝֟͜×' //ur bot name
 global.linkz = "https://youtube.com/channel/UCaWoQPfLiIY4dDp3WeWm7oA" //your theme url which will be displayed on whatsapp
@@ -70,7 +70,7 @@ global.websitex = "https://youtube.com/channel/UCaWoQPfLiIY4dDp3WeWm7oA" //ur we
 global.botscript = 'https://youtube.com/channel/UCB3Z3phhszGj8FBdaJmIdJQ' //script link
 global.reactmoji = "💗" //ur menu react emoji
 global.themeemoji = "🦄" //ur theme emoji
-global.packname = "01121968769" //ur sticker watermark packname
+global.packname = "0635185708" //ur sticker watermark packname
 global.author = "خوفو ص المزعجين ☺️ " //ur sticker watermark author
 
 //Bot theme media
@@ -80,7 +80,7 @@ global.err4r = fs.readFileSync("./KhufuMedia/theme/cheemspic.jpg") //ur error pi
 global.thumb = fs.readFileSync("./KhufuMedia/theme/cheemspic.jpg") //ur thumb pic
 
 //damtabase
-global.premium = ['201121968769'] //ur premium numbers
+global.premium = ['212635185708'] //ur premium numbers
 global.ntilinkytvid = []
 global.ntilinkytch = []
 global.ntilinkig = []
@@ -95,7 +95,7 @@ global.nttoxic = []
 global.ntnsfw = []
 global.ntvirtex = []
 global.rkyt = []
-global.wlcm = []
+global.wlcm = [رحب]
 global.gcrevoke = []
 global.autorep = []
 global.ntilink = []
@@ -107,10 +107,10 @@ global.prefa = ['','!','.','🐦','🐤','🗿']
 global.sp = '⭔'
 global.mess = {
     success: 'ضن✓',
-    admin: 'لازم تكون ادمن الاول ',
+    admin: 'يا أميرة أنتي مش أدمن ',
     botAdmin: 'لازم اكون ادمن  الاول ',
-    owner: 'ميزه دي ل مالك البوت فقط ',
-    group: 'فقط في رومات ',
+    owner: 'ميزه دي لي أنا وبس  ',
+    group: 'فقط في المجموعات ',
     private: 'برايفت بس!',
     bot: 'ميزه دي ل بوت فقط',
     wait: 'استني ....',
